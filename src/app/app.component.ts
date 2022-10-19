@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  nome = 'Matheus';
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
+  nome = 'Guilherme';
+
+  Adicionar() {
+    console.log(`Adicionando ${this.nome}`);
+
+    const numero = Math.round(Math.random() * 100);
+    this.nome = 'João ' + numero;
+  }
+
+  adicionar(nome: string) {}
 }
